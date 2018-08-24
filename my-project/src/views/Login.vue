@@ -38,7 +38,7 @@ export default {
             this.$_http.POST('/login',data).then(res=>{
                 if(res){
                     this.fullscreenLoading = false
-                    console.log(res);
+                    console.log(res)
                 }
             }).catch((error)=>{
                 var reg = /\d+[ms]/i;

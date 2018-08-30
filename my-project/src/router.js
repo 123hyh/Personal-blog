@@ -11,6 +11,7 @@ export default new Router({
     {path: "/",name: "home",component: Home},
     {path: "/about",name: "about",component: () =>import( "@/views/About.vue")},
     {path:'/login',component: ()=> import ('@/views/Login.vue')},
-    {path:'/vuex',component:() => import('@/views/VuexVue.vue')}
+    {path:'/vuex',component:() => import('@/views/VuexVue.vue')},
+    {path:'/page',component: ()=> import('@/components/Pagination.vue')}
   ]
 });

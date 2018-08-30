@@ -1,11 +1,8 @@
 let express = require('express');
 let pool = require('../pool');
-let morgan = require('morgan');
-let fs = require('fs');
 let Router = express.Router();
 Router.post('/login',(req,res)=>{
     let name = req.body.name,   password = req.body.password;
-    console.log(req.params)
     let sql = 'SELECT uname FROM `xz_user` WHERE uname=? AND upwd=?';
     pool.query(sql,[name,password],(err,response)=>{
         if(err) throw err;

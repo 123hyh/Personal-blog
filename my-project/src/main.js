@@ -7,7 +7,7 @@ import Element from 'element-ui';
 Vue.use(Element);
 /* 封装axios */
 import 'element-ui/lib/theme-chalk/index.css';
-import serviceB from '@/service/service';
+import serviceB from '@/service/serviceB';
 Vue.prototype.$_http = new serviceB();
 
 

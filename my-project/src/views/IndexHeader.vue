@@ -21,7 +21,12 @@ export default {
     text-align: center;
     line-height: 60px;
     a{
-        color:#384756
+        color:#384756;
+    }
+    >div{
+        >div:not(:first-child){
+            text-align: right;
+        }
     }
 }
 </style>

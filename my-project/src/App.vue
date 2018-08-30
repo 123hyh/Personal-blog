@@ -13,7 +13,6 @@ import '@/assets/css/normalize.css'
 export default {
   data(){
     return {
-
     }
   },
   beforeCreate(){
@@ -22,13 +21,15 @@ export default {
   components:{
     IndexHeader,
     IndexFooter
-  }
+  },
 }
+
 </script>
 
 <style lang="less">
 .body{
   width: 100%; 
+  font-size: 14px
 }
 #app{
   width: 90%;

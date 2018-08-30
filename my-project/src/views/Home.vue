@@ -1,6 +1,6 @@
 <template>
   <div class="el-row">
-      <div class="el-col-xs-24 el-col-sm-12 el-col-md-6  el-col-md-offset-1 container-aside">  
+      <div class="el-col-xs-24 el-col-sm-12 el-col-md-6  el-col-md-offset-1 el-col-hidden-md-only  container-aside">  
         <div class="navgation"></div>
       </div>
       <div class="el-col-xs-24 el-col-sm-12 el-col-md-15 el-col-md-offset-1 container-main">是我</div>

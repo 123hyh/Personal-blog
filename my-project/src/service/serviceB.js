@@ -2,9 +2,17 @@ import axios from 'axios';
 axios.defaults.withCredentials = true;
 export default class service {
     constructor() {
+        /* 
+        * @ 初始化url 
+        */
         this.user = 'http://127.0.0.1:3000/user'
         this.page = 'http://127.0.0.1:3000/product'
     }
+
+    /* 
+    * @ 所有的post的API
+    */
+
     POSTHTTPService(params){
         return new Promise((resolve, reject) => {
             axios({
@@ -21,6 +29,11 @@ export default class service {
             })
         })
     }
+
+    /* 
+    * @ 所有的get的API 
+    */
+
     GETHTTPServise(params){
         return new Promise((resolve,reject)=>{
             axios({

@@ -21,7 +21,7 @@ app.listen(3000);
 app.use(bodyParser.json());  //把前台传过来的json对象转为对象
 
 app.use(cors({
-    origin: 'http://127.0.0.1:8081', /* cors模块跨域 */
+    origin: '*', /* cors模块跨域 */
     credentials: true
 }));
 app.use('/user',UserRouter);
